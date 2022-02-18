@@ -1,8 +1,10 @@
-import { coinFlips, countFlips } from './modules/coin.mjs';
+import { coinFlips, countFlips } from './modules/coin.mjs'
 
-var num = process.argv.length == 2 ? 1 : process.argv.slice(2);
+const args = (process.argv.slice(2))
+args["number"]
+const number = args.number || 1
 
-var allFlips = coinFlips(num);
+var allFlips = coinFlips(number)
 
-console.log(allFlips);
-console.log(countFlips(allFlips));
+console.log(allFlips)
+console.log(countFlips(allFlips))
