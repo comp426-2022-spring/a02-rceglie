@@ -14,8 +14,8 @@
  * 
  */
 
-function coinFlip() {
-
+export function coinFlip() {
+  return Math.round(Math.random()) ? "heads" : "tails";
 }
 
 /** Multiple coin flips
@@ -37,8 +37,12 @@ function coinFlip() {
     ]
  */
 
-function coinFlips(flips) {
-
+export function coinFlips(flips) {
+  var results = [];
+  for (var i = 0; i < flips; i++){
+    results.push(coinFlip());
+  }
+  return results;
 }
 
 /** Count multiple flips
