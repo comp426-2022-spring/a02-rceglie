@@ -1,8 +1,5 @@
 import { coinFlips } from './modules/coin.mjs';
 
-const args = require("minimist")(process.argv.slice(2));
-args["number"]
-
-var num = args.number || 1;
+var num = process.argv.length == 2 ? 1 : process.argv.slice(2);
 
 console.log(coinFlips(num));
