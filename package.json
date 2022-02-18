@@ -1,0 +1,19 @@
+{
+  "name": "a02-rceglie",
+  "version": "1.0.0",
+  "description": "Coin flip emulator",
+  "main": "flip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flip": "node flip.js",
+    "flips": "node flips.js",
+    "guess-flip": "node guess-flip.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a02-rceglie.git"
+  },
+  "author": "Robert Ceglie",
+  "license": "GPL-3.0-or-later"
+}
