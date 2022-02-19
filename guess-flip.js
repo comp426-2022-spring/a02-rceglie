@@ -8,7 +8,7 @@ const guess = args.call || "err1"
 if (guess == "err1"){
     console.log("Error: no input.")
 } else if (guess != "heads" && guess != "tails"){
-    console.log("Error: invalid input.")
+    console.log("Usage: node guess-flip.js --call=[heads|tails]")
 } else {
     var res = coinFlip()
     console.log({call:guess, flip:res, result: (guess == res ? "win":"lose")})
