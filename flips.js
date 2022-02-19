@@ -6,7 +6,7 @@ args["number"]
 const number = args.number || 1
 
 if (number == 1){
-    console.log(coinFlip())
+    console.log(coinFlips(number))
 } else {
     var allFlips = coinFlips(number)
     console.log(allFlips)
