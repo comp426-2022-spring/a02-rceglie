@@ -4,10 +4,11 @@ import { coinFlip, coinFlips, countFlips } from './modules/coin.mjs'
 const args = minimist(process.argv.slice(2))
 args["number"]
 const num = args.number || 1
-if (number == 1){
-    console.log(coinFlips(number))
+
+if (num == 1){
+    console.log(coinFlips(num))
 } else {
-    var allFlips = coinFlips(number)
+    var allFlips = coinFlips(num)
     console.log(allFlips)
     console.log(countFlips(allFlips))
 }
