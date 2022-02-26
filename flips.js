@@ -5,13 +5,9 @@ const args = minimist(process.argv.slice(2))
 args["number"]
 const num = args.number || 1
 
-if (num == 1){
-    console.log(coinFlips(num))
-} else {
-    var allFlips = coinFlips(num)
-    console.log(allFlips)
-    console.log(countFlips(allFlips))
-}
+var allFlips = coinFlips(num)
+console.log(allFlips)
+console.log(countFlips(allFlips))
 /*
 if (num != 1){
     var allFlips = coinFlips(num)
