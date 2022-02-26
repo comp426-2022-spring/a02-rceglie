@@ -8,13 +8,3 @@ const num = args.number || 1
 var allFlips = coinFlips(num)
 console.log(allFlips)
 console.log(countFlips(allFlips))
-/*
-if (num != 1){
-    var allFlips = coinFlips(num)
-    console.log(allFlips)
-    console.log(countFlips(allFlips))
-} else{
-    var res = coinFlip()
-    console.log("{ " + res + ": 1 }")
-}*/
-
